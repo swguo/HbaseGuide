@@ -122,15 +122,6 @@ exit;
 ### **步驟 3: 將查詢結果存儲到 HBase**
 
 
-#### **1. 在 HBase 中創建目標表**
-進入 HBase shell，創建一個表以存儲查詢結果：
-```bash
-hbase shell
-```
-執行以下命令創建表：
-```bash
-create 'customer_orders', 'cf'
-```
 
 #### **2. 在 Hive 中創建與 HBase 對應的外部表**
 使用 `HBaseStorageHandler` 創建外部表：
